@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Favoritos - FilmPage</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>FilmPage</h1>
+        </div>
+
+        <ul id="botones_menu">
+            <a href="./index.html">
+                <li>
+                    <p>Inicio</p>
+                </li>
+            </a>
+            <a href="./favorites.html">
+                <li>
+                    <p>Favoritos</p>
+                </li>
+            </a>
+            <li>
+                <form id="searchForm" action="results.html" method="GET">
+                    <input type="text" id="searchInput" name="query" placeholder="Buscar...">
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title">
+        <h1>Peliculas Favoritas</h1>
+    </div>
+
+    <div class="container-cards" id="favorites-container">
+    </div>
+
+
+    <script type="module" src="./js/search.js"></script>
+    <script type="module" src="./js/favorites.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>FilmPage</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>FilmPage</h1>
+        </div>
+
+        <ul id="botones_menu">
+            <a href="./index.html">
+                <li>
+                    <p>Inicio</p>
+                </li>
+            </a>
+            <a href="./favorites.html">
+                <li>
+                    <p>Favoritos</p>
+                </li>
+            </a>
+
+            <li>
+                <form id="searchForm" action="results.html" method="GET">
+                    <input type="text" id="searchInput" name="query" placeholder="Buscar...">
+                </form>
+
+
+            </li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <div class="list">
+            <div class="item" style="background-image: url('');"></div>
+            <div class="item" style="background-image: url('');"></div>
+            <div class="item" style="background-image: url('');"></div>
+            <div class="item" style="background-image: url('');"></div>
+            <div class="item" style="background-image: url('');"></div>
+        </div>
+        <div class="buttons">
+            <button id="prev">
+                <</button>
+                    <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="title">
+        <h1>Peliculas mas populares</h1>
+    </div>
+
+    <div class="container-cards">
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/moviescript.js"></script>
+    <script type="module" src="./js/search.js"></script>
+</body>
+
+</html>

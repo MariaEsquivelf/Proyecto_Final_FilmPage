@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Movie - FilmPage</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>FilmPage</h1>
+        </div>
+        <ul id="botones_menu">
+            <a href="./index.html">
+                <li>
+                    <p>Inicio</p>
+                </li>
+            </a>
+            <a href="./favorites.html">
+                <li>
+                    <p>Favoritos</p>
+                </li>
+            </a>
+                <li>
+                    <form id="searchForm" action="results.html" method="GET">
+                        <input type="text" id="searchInput" name="query" placeholder="Buscar...">
+                    </form>
+                </li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <div class="list">
+            <div class="item" style="background-image: url('');"></div>
+        </div>
+    </div>
+
+    <div class="favoritos">
+        <button id="favoriteBtn">Agregar a favoritos</button>
+    </div>
+    <div id="comment-section">
+        <h2>Deja tu comentario y puntuación</h2>
+        <textarea id="comment-box" placeholder="Escribe tu comentario aquí..."></textarea>
+        <div id="star-rating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <button id="submit-comment">Enviar</button>
+    </div>
+    <div id="display-comments">
+        <!-- Los comentarios se mostrarán aquí -->
+    </div>
+    <script type="module" src="./js/comentarios.js"></script>
+    <script type="module" src="./js/moviescript.js"></script>
+    <script type="module" src="./js/search.js"></script>
+
+</body>
+
+</html>
